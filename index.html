@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bito Chat Privacy Policy</title>
+  <meta name="description" content="Privacy Policy of Bito Chat, a serverless, end-to-end encrypted group messenger." />
+  <link rel="icon" href="icon.png" />
+  <style>
+    :root {
+      --bg: #070a14; --card: rgba(255,255,255,.06); --border: rgba(255,255,255,.13);
+      --text: #f4f6fb; --text-2: #b4bcd0; --muted: #7a849c; --a: #8b5cf6; --b: #22d3ee;
+    }
+    @media (prefers-color-scheme: light) {
+      :root { --bg: #f3f4fb; --card: #fff; --border: rgba(30,27,75,.1); --text: #0f1222; --text-2: #4a5068; --muted: #8a90a6; --a: #7c3aed; --b: #0891b2; }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--bg); color: var(--text);
+      font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background-image: radial-gradient(60vmax 60vmax at -10% -20%, color-mix(in srgb, var(--a) 30%, transparent), transparent 60%),
+                        radial-gradient(50vmax 50vmax at 110% 10%, color-mix(in srgb, var(--b) 22%, transparent), transparent 60%);
+      background-attachment: fixed;
+    }
+    main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+    header { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+    header img { width: 52px; height: 52px; border-radius: 14px; }
+    h1 { margin: 0; font-size: clamp(26px, 6vw, 34px); letter-spacing: -.5px; }
+    .meta { color: var(--muted); font-size: 14px; margin: 0 0 28px; }
+    section { background: var(--card); border: 1px solid var(--border); border-radius: 18px; padding: 18px 20px; margin-bottom: 14px; }
+    h2 { margin: 0 0 6px; font-size: 18px; }
+    p { margin: 0; color: var(--text-2); }
+    footer { color: var(--muted); font-size: 13px; margin-top: 28px; text-align: center; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <img src="icon.png" alt="" />
+      <h1>Bito Chat Privacy Policy</h1>
+    </header>
+    <p class="meta">Effective 4 October 2026 · applies to the Bito Chat app for Android and Windows</p>
+
+    <section>
+      <h2>Summary</h2>
+      <p>Bito Chat has no servers and no accounts stored anywhere but your device. We (the developers) never receive your messages, files, contacts, name, email, phone number or photo. There are no ads, no analytics and no tracking.</p>
+    </section>
+    <section>
+      <h2>Your account and ID card</h2>
+      <p>Your name, email, phone number and photo are stored only inside your certificate on your phone. The certificate is encrypted with your 4-digit PIN and with a key kept in the phone's secure hardware, so it can't be opened on any other device. Email, phone number and photo are never sent to anyone.</p>
+    </section>
+    <section>
+      <h2>What other people see</h2>
+      <p>People in your chat see your display name (or "Hidden user" with a short ID if you turn on "Hide my name"), the messages, files, votes and reactions you send, and whether you are the admin. They receive this directly from devices in the chat, encrypted end to end.</p>
+    </section>
+    <section>
+      <h2>How connections work</h2>
+      <p>To be reachable, your device opens a Cloudflare Tunnel and publishes an encrypted, short-lived record (your tunnel address) in the public BitTorrent DHT under a key derived from your 6-character code. Cloudflare and DHT nodes see network information such as IP addresses, but your messages pass through them only as AES-256-GCM ciphertext. Cloudflare's own privacy policy applies to its network.</p>
+    </section>
+    <section>
+      <h2>Files</h2>
+      <p>A file you send stays on your device and is served, encrypted, only to chat members who choose to download it. Nobody downloads anything automatically.</p>
+    </section>
+    <section>
+      <h2>Camera</h2>
+      <p>The camera is used only while you scan someone's pairing code. Images are analysed on your phone and are never saved or sent.</p>
+    </section>
+    <section>
+      <h2>Storage access (optional)</h2>
+      <p>If you allow "All files access" for the emergency button, the app uses it only during an emergency wipe, to find and delete copies of your own certificate file. It does not read, collect or send any other files.</p>
+    </section>
+    <section>
+      <h2>Notifications and background</h2>
+      <p>A notification keeps the connection running in the background and shows new messages. Notification content stays on your device.</p>
+    </section>
+    <section>
+      <h2>Deleting your data</h2>
+      <p>"Delete account" erases your certificate. The emergency button (if you turn it on) asks every online chat member's app to delete your messages and destroys all app data on your device. We cannot delete data from devices that are offline, from modified apps, or from screenshots and files other people already saved. Uninstalling the app removes all of its data from your device.</p>
+    </section>
+    <section>
+      <h2>Children</h2>
+      <p>Bito Chat is not intended for children under 13.</p>
+    </section>
+    <section>
+      <h2>Changes</h2>
+      <p>If this policy changes, the new version will be published on this page and shown in the app.</p>
+    </section>
+    <section>
+      <h2>Contact</h2>
+      <p>Questions about this policy: <a id="contact" href="mailto:av.n@aol.com" style="color:var(--b)">av.n@aol.com</a></p>
+    </section>
+
+    <footer>© 2026 Bito Chat</footer>
+  </main>
+</body>
+</html>
